@@ -1,3 +1,3 @@
 GuruTube
 ========
-Readme
+Read me
