@@ -34,6 +34,7 @@ class Video(models.Model):
         (8, 'Disapproved'),
     ))
     tags = models.ManyToManyField(Tag)
+    products = models.ManyToManyField('products.Product')
     
     class Meta:
         ordering = ['priority_coefficient']
