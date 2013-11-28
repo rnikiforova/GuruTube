@@ -4,7 +4,7 @@ class Tag(models.Model):
     content = models.CharField(max_length=15)
     
     def __str__(self):
-        """Returns the tag content"""
+        '''Returns the tag content'''
         return self.content
     
 class Channel(models.Model):
@@ -13,7 +13,7 @@ class Channel(models.Model):
     subscribers_count = models.PositiveIntegerField(default=0)
     
     def __str__(self):
-        """Returns the channel username"""
+        '''Returns the channel username'''
         return self.username
 
 class Video(models.Model):
@@ -40,9 +40,9 @@ class Video(models.Model):
         ordering = ['priority_coefficient']
     
     def __str__(self):
-        """Returns the title of the video"""
+        '''Returns the title of the video'''
         return self.title
     
     def get_url(self):
-        """Returns the url of the video"""
+        '''Returns the url of the video'''
         return str.join('https://www.youtube.com/watch?v=', self.youtube_id)
