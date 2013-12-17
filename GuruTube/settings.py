@@ -57,13 +57,24 @@ WSGI_APPLICATION = 'GuruTube.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'GuruTubeDb',
+#        'USER': 'postgres',
+#        'PASSWORD': 'root',
+#    }
+#}
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'GuruTubeDb',
-        'USER': 'postgres',
-        'PASSWORD': 'root',        
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    'NAME': 'd1u4i4063u1du4',
+    'HOST': 'ec2-54-246-97-240.eu-west-1.compute.amazonaws.com',
+    'PORT': 5432,
+    'USER': 'mtqgybyodxqhke',
+    'PASSWORD': 'fcS2KIZeILB4Im_c7r-pKfdLY1'
+  }
 }
 
 # Internationalization
